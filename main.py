@@ -3,39 +3,20 @@ import gi
 gi.require_version('Gtk','3.0')
 
 from  gi.repository import Gtk as gtk
+from actions_boutons import BoutonMain, BoutonHotel
 
-"""
-class Main:
-    def __int__(self):
-        fichier_glade = "fenetre1.glade"
-        self.builder = gtk.Builder()
-        self.builder.add_from_file(fichier_glade)
-        self.builder.connect_signals(self)
 
-        window = self.builder.get_object("main")
-        window.connect("delete-event",gtk.main_quit)
-        window.show_all()
-"""
-
-"""
-    definition des differentes methode à éffctuer sur les differents button
-    
-    chaque methode faire reference à un button en question  
-"""
-
-class ActionButton:
-    def quitter(self, quitter):
-        print("Quitter")
-        gtk.main_quit()
-
-fichier_glade = "fenetre1.glade"
+fichier_main__glade = "main.glade"
 builder = gtk.Builder()
-builder.add_from_file(fichier_glade)
+builder.add_from_file(fichier_main__glade)
 
-builder.connect_signals(ActionButton())
+builder.connect_signals(BoutonMain())
+window = builder.get_object("fenetre_main")
 
-window = builder.get_object("main")
-window.connect("delete-event",gtk.main_quit)
+#quitter = builder.get_object("btn_quitter")
+
+
+window.connect("delete-event", gtk.main_quit)
 window.show_all()
 
 gtk.main()
