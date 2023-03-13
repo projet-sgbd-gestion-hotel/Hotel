@@ -3,6 +3,7 @@ import gi
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk as gtk
 
+
 class Hotel:
     def __int__(self,nom,adresse,etage = 0,chambre_par_etage = 0,chambre_total = 1):
         self.nom = nom

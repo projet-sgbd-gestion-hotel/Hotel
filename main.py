@@ -6,12 +6,12 @@ from  gi.repository import Gtk as gtk
 from actions_boutons import BoutonMain, BoutonHotel
 
 
-fichier_main__glade = "main.glade"
 builder = gtk.Builder()
-builder.add_from_file(fichier_main__glade)
+builder.add_from_file("main_main.glade")
 
 builder.connect_signals(BoutonMain())
-window = builder.get_object("fenetre_main")
+
+window = builder.get_object("fenetre_main_main")
 
 #quitter = builder.get_object("btn_quitter")
 

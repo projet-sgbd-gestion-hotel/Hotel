@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.2 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkWindow" id="fenetre_statistique">
+    <property name="can_focus">False</property>
+    <property name="window_position">center</property>
+    <property name="default_width">1500</property>
+    <property name="default_height">900</property>
+    <property name="gravity">center</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="fixed_statistique">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">1209</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">En definissant l'interval de temps ici, vous aurez les informations </property>
+            <attributes>
+              <attribute name="font-desc" value="Saab Bold 24"/>
+              <attribute name="style" value="normal"/>
+              <attribute name="weight" value="bold"/>
+              <attribute name="foreground" value="#20204a4a8787"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">147</property>
+            <property name="y">98</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">1247</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">relatifs aux nombres de reservations effectué pendant cette periode</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 24"/>
+              <attribute name="style" value="normal"/>
+              <attribute name="weight" value="bold"/>
+              <attribute name="foreground" value="#20204a4a8787"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">147</property>
+            <property name="y">157</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Du</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 35"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">300</property>
+            <property name="y">430</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">AU</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 34"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">660</property>
+            <property name="y">430</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry">
+            <property name="width_request">168</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+          </object>
+          <packing>
+            <property name="x">430</property>
+            <property name="y">430</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry">
+            <property name="width_request">168</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+          </object>
+          <packing>
+            <property name="x">818</property>
+            <property name="y">430</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">839</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">NB:  Pour la date utilisé le format [  jour-mois-annee ]
+		Avec le mois en chiffre de 0.....12</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 20"/>
+              <attribute name="weight" value="bold"/>
+              <attribute name="foreground" value="#cece5c5c0000"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">208</property>
+            <property name="y">250</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton">
+            <property name="label" translatable="yes">Rechercher</property>
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+          </object>
+          <packing>
+            <property name="x">675</property>
+            <property name="y">585</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btn_retour_statistique">
+            <property name="label" translatable="yes">Retour</property>
+            <property name="width_request">90</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+          </object>
+          <packing>
+            <property name="x">41</property>
+            <property name="y">19</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

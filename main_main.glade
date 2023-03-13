@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.2 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkWindow" id="fenetre_main_main">
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">Appli Hotel</property>
+    <property name="window_position">center</property>
+    <property name="default_width">1500</property>
+    <property name="default_height">900</property>
+    <property name="gravity">center</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="btn_gestion_hotel">
+            <property name="label" translatable="yes">Gestion Hotel</property>
+            <property name="width_request">151</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="gestionHotel" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">15</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btn_reservation">
+            <property name="label" translatable="yes">Reservation    </property>
+            <property name="width_request">151</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="reservation" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">13</property>
+            <property name="y">318</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btn_gestion_client">
+            <property name="label" translatable="yes">Gestion Client</property>
+            <property name="width_request">151</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="gestionClient" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">9</property>
+            <property name="y">439</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btn_gestion_chambre">
+            <property name="label" translatable="yes">Gestion Chambre</property>
+            <property name="width_request">150</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="gestionChambre" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">13</property>
+            <property name="y">558</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btn_voir_statistique">
+            <property name="label" translatable="yes">Voir Statistique   </property>
+            <property name="width_request">150</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="statistique" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">13</property>
+            <property name="y">678</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btn_quitter">
+            <property name="label" translatable="yes">Quitter </property>
+            <property name="width_request">148</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="quitter" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">14</property>
+            <property name="y">798</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparator">
+            <property name="width_request">50</property>
+            <property name="height_request">680</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="orientation">vertical</property>
+          </object>
+          <packing>
+            <property name="x">185</property>
+            <property name="y">199</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">942</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">BIENVENUE DANS VOTRE MAGNIFIQUE HOTEL : LE LUXE</property>
+            <property name="justify">center</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 23"/>
+              <attribute name="style" value="normal"/>
+              <attribute name="weight" value="semibold"/>
+              <attribute name="foreground" value="#72729f9fcfcf"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">320</property>
+            <property name="y">11</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Quelques informations de l'hotel</property>
+            <attributes>
+              <attribute name="font-desc" value="Sans Bold 24"/>
+              <attribute name="style" value="normal"/>
+              <attribute name="weight" value="semibold"/>
+              <attribute name="foreground" value="#72729f9fcfcf"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">510</property>
+            <property name="y">100</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFixed" id="fixed_info_hotel">
+            <property name="width_request">1230</property>
+            <property name="height_request">680</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkLabel" id="label_adresse_hotel">
+                <property name="width_request">246</property>
+                <property name="height_request">80</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Adresse de l'hotel	:</property>
+                <attributes>
+                  <attribute name="font-desc" value="Cabin Semi-Bold 20"/>
+                  <attribute name="style" value="normal"/>
+                  <attribute name="foreground" value="#72729f9fcfcf"/>
+                </attributes>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label_nb_etage">
+                <property name="width_request">198</property>
+                <property name="height_request">80</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Nombre d'étage	:</property>
+                <attributes>
+                  <attribute name="font-desc" value="Cabin Semi-Bold 20"/>
+                  <attribute name="style" value="normal"/>
+                  <attribute name="foreground" value="#72729f9fcfcf"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">518</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label_nb_chambre">
+                <property name="width_request">294</property>
+                <property name="height_request">80</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Nombre de chambre	:</property>
+                <attributes>
+                  <attribute name="font-desc" value="Cabin Semi-Bold 20"/>
+                  <attribute name="style" value="normal"/>
+                  <attribute name="foreground" value="#72729f9fcfcf"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">834</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkImage" id="image">
+                <property name="width_request">100</property>
+                <property name="height_request">80</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="pixbuf">hotel_vue.jpg</property>
+              </object>
+              <packing>
+                <property name="x">150</property>
+                <property name="y">75</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">250</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

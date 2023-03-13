@@ -13,9 +13,13 @@
       <placeholder/>
     </child>
     <child>
-      <object class="GtkFixed">
+      <object class="GtkFixed" id="grid_description">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
+        <property name="margin_left">20</property>
+        <property name="margin_right">20</property>
+        <property name="margin_top">20</property>
+        <property name="margin_bottom">20</property>
         <child>
           <object class="GtkLabel">
             <property name="width_request">173</property>
@@ -100,10 +104,10 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton">
+          <object class="GtkButton" id="btn_retour_desc">
             <property name="label" translatable="yes">Retour</property>
             <property name="width_request">100</property>
-            <property name="height_request">80</property>
+            <property name="height_request">50</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
